@@ -1,15 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" media="screen" href="gallery_style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
 </head>
-<body>
-    <h2>Gallery</h2>
+<body class="bg-white text-dark">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg id="i-caret-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 2 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                        <path d="M10 30 L26 16 10 2 Z" />
+                    </svg>
+                    <strong>Hololive</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Info</a>
+                        </li>
+                        <li>
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid">
+                    <button class="btn btn-outline-light" type="button">Join</button>
+                </div>
+                </div>
+                
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="jumbotron mt-3 p-5 rounded"> 
+            <h1 class="text-center text-uppercase fs-sm-5">
+                <strong>"Ore wa Hororaibu da!"</strong>
+            </h1>
+            <p class="text-center fs-5">Natsuiro Matsuri</p>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>0th Generation</strong> 
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/4/4b/Tokino_Sora_2020_Portrait.png/revision/latest?cb=20201018021821">
+                        <div class="card-body">Tokino Sora</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/c/c9/Sakura_Miko_2019_Portrait.jpg/revision/latest/scale-to-width-down/310?cb=20200306021815">
+                        <div class="card-body">Sakura Miko</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/8/8b/Hoshimachi_Suisei_2019_Portrait.png/revision/latest/scale-to-width-down/310?cb=20191205132210">
+                        <div class="card-body">Hoshimachi Suisei</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/b/bd/AZKi_-_Profile_Picture.jpg/revision/latest?cb=20200516161101">
+                        <div class="card-body">AZKi</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/8/85/Roboco_Portrait.jpg/revision/latest/scale-to-width-down/400?cb=20190215164614">
+                        <div class="card-body">Roboco</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>1st Generation</strong> 
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/c/cf/Yozora_Mel_Portrait.png/revision/latest?cb=20190215175632">
+                        <div class="card-body">Yozora Mel</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/e/e8/Shirakami_Fubuki_Portrait.jpg/revision/latest/scale-to-width-down/310?cb=20190206185441">
+                        <div class="card-body">Shirakami Fubuki</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/f/f7/Natsuiro_Matsuri_Portrait.png/revision/latest?cb=20190215172851">
+                        <div class="card-body">Natsuiro Matsuri</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/5/59/Aki_Rosenthal_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215173936">
+                        <div class="card-body">Aki Rosenthal</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/7/77/Akai_Haato_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215174535">
+                        <div class="card-body">Akai Haato</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>2nd Generation</strong>
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/8/8b/Minato_Aqua_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215180705">
+                        <div class="card-body">Minato Aqua</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/3/3f/Murasaki_Shion_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190702115949">
+                        <div class="card-body">Murasaki Shion</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/0/09/Nakiri_Ayame_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215184953">
+                        <div class="card-body">Nakiri Ayame</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/a/a8/Yuzuki_Choco_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215165656">
+                        <div class="card-body">Yuzuki Choco</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/4/49/Oozora_Subaru_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190221182438">
+                        <div class="card-body">Oozora Subaru</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>Hololive GAMERS</strong>
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/e/e8/Shirakami_Fubuki_Portrait.jpg/revision/latest/scale-to-width-down/310?cb=20190206185441">
+                        <div class="card-body">Shirakami Fubuki</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/1/18/Ookami_Mio_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190215191005">
+                        <div class="card-body">Ookami Mio</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/3/35/Nekomata_Okayu_img.png/revision/latest/scale-to-width-down/310?cb=20190405185910">
+                        <div class="card-body">Nekomata Okayu</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/0/05/Inugami_Korone_img.png/revision/latest/scale-to-width-down/310?cb=20190405185913">
+                        <div class="card-body">Inugami Korone</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>3rd Generation</strong>
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/9/95/Usada_Pekora_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190821034245">
+                        <div class="card-body">Usada Pekora</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/a/a2/Uruha_Rushia_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190821034540">
+                        <div class="card-body">Uruha Rushia</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/8/82/Shiranui_Flare_-_Portrait_02.png/revision/latest/scale-to-width-down/310?cb=20191205142732">
+                        <div class="card-body">Shiranui Flare</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/0/03/Shirogane_Noel_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190821035057">
+                        <div class="card-body">Shirogane Noel</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/4/4e/Houshou_Marine_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20190821035347">
+                        <div class="card-body">Houshou Marine</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>4th Generation</strong>
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/6/6c/Amane_Kanata_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200121010144">
+                        <div class="card-body">Amane Kanata</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/0/09/Kiryu_Coco_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20191228224253">
+                        <div class="card-body">Kiryu Coco</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/c/c6/Tsunomaki_Watame_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20191229204823">
+                        <div class="card-body">Tsunomaki Watame</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/3/35/Tokoyami_Towa_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200126194247">
+                        <div class="card-body">Tokoyami Towa</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/2/22/Himemori_Luna_-_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200126200041">
+                        <div class="card-body">Himemori Luna</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h5 class="card-header bg-primary text-white">
+                <strong>5th Generation</strong>
+            </h5>
+        </div>
+        <div class="card-body bg-light mb-3">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-6">
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/e/ee/Yukihana_Lamy_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200807014745">
+                        <div class="card-body">Yukihana Lamy</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/b/bf/Momosuzu_Nene_2021_Portrait.png/revision/latest/scale-to-width-down/310?cb=20210201010039">
+                        <div class="card-body">Momosuzu Nene</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/d/d9/Shishiro_Botan_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200807015010">
+                        <div class="card-body">Shishiro Botan</div>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://static.wikia.nocookie.net/virtualyoutuber/images/3/33/Omaru_Polka_Portrait.png/revision/latest/scale-to-width-down/310?cb=20200807015145">
+                        <div class="card-body">Omaru Polka</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
